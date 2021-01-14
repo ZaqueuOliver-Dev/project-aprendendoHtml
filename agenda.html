@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda de Trabalhos</title>
+    <link rel="stylesheet" type="text/css" href="_css/agendaigreja.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/agenda.css"/>
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<script language="javascript" src="_javascript/testeCalendar.js"></script>
+<body>
+<div id="interfaceage">
+    <header id="cabecalhoage">
+        <hgroup>
+            <h1>Fique por dentro dos Eventos</h1>
+            <h2><p>Nossa agenda é para você que deseja se aproximar <br/>cada vez mais de Deus
+                e sonha em ter experiências incriveis com Senhor!</p></h2>
+            
+        </hgroup>
+
+        <img id="iconeage" src="_imagens/agenda.png"/>
+        <nav id="menuAge">
+            <h1>Menu Principal</h1>
+            <ul type="disc">
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/logo-min.png')"><a href="projetoigreja.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/logo-min.png')" onmouseout="mudaFoto('_imagens/logo-min.png')"><a href="specs.html">Ministério</a></li>
+                <li onmouseover="mudaFoto('_imagens/agenda.png')" onmouseout="mudaFoto('_imagens/agenda.png')"><a href="agenda.html">Agenda</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/logo-min.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/logo-min.png')"><a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/logo-min.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                <li onmouseover="mudaFoto ('_imagens/cadastro-menu04.png')" onmouseout="mudaFoto('_imagens/logo-min.png')"><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+        <?php
+            include 'calendario.php';
+
+            monaCalendario();
+
+        ?>
+        <script type="textjavascript" src="_javascript/testeCalendar.js"></script>
+    </header>
+
+    <section id="corpoAge">
+            <header id="cabecalho-agenda">
+            </header>
+    </section>
+</div>
+
+
+</body>
+</html>
